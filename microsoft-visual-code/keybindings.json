@@ -5,4 +5,8 @@
     { "key": "ctrl+o",          "command": "workbench.action.gotoSymbol" },
     { "key": "ctrl+shift+/",           "command": "editor.action.blockComment",
                                      "when": "editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+shift+alt+[",         "command": "editor.foldAll",
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+shift+alt+]",         "command": "editor.unfoldAll",
+                                     "when": "editorTextFocus" },                                 
 ]
