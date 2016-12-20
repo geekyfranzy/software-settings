@@ -13,7 +13,7 @@
 		"description": "Log output to console"
 	}
 */
-	"Print to console": {
+	"Print to Console": {
 		"prefix": "log",
 		"body": [
 			"console.log($1);"
@@ -26,26 +26,46 @@
 		"body": [
 			"$('$1')"
 		],
-		"description": "Constuct jQuery Selector"
+		"description": "Construct jQuery Selector"
 	},
 
-	"Construct if statement": {
+	"Construct if Statement": {
 		"prefix": "iff",
 		"body": [
 			"if ($1) {",
 			"	",
-			"$2}"
+			"}"
 		],
-		"description": "Constuct if statement"
+		"description": "Construct if statement"
 	},
 
-	"Construct function": {
+	"Construct Function": {
 		"prefix": "ff",
 		"body": [
 			"function ($1) {",
 			"	",
-			"$2}"
+			"}"
 		],
-		"description": "Constuct function"
+		"description": "Construct function"
 	},
+
+	"Construct Self Executing Function": {
+		"prefix": "sff",
+		"body": [
+			"(function () {",
+			"	$1",
+			"}());"
+		],
+		"description": "Construct Self Executing Function"
+	},
+
+	"Construct Document Ready": {
+		"prefix": "docready",
+		"body": [
+			"$(document).ready(function () {",
+			"	$1",
+			"});"
+		],
+		"description": "Construct $(document).ready(function () {});"
+	}
 }
