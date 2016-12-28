@@ -8,5 +8,6 @@
     { "key": "ctrl+shift+alt+[",         "command": "editor.foldAll",
                                      "when": "editorTextFocus" },
     { "key": "ctrl+shift+alt+]",         "command": "editor.unfoldAll",
-                                     "when": "editorTextFocus" },                                 
+                                     "when": "editorTextFocus" },
+    { "key": "ctrl+e",                "command": "workbench.action.showAllEditors" },
 ]

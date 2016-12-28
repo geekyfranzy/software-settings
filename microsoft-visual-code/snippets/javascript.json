@@ -14,7 +14,7 @@
 	}
 */
 	"Print to Console": {
-		"prefix": "log",
+		"prefix": "clog",
 		"body": [
 			"console.log($1);"
 		],
@@ -49,10 +49,21 @@
 		"description": "Construct function"
 	},
 
+	"Construct Function;": {
+		"prefix": "ffc",
+		"body": [
+			"function ($1) {",
+			"	",
+			"};"
+		],
+		"description": "Construct function;"
+	},
+
 	"Construct Self Executing Function": {
 		"prefix": "sff",
 		"body": [
 			"(function () {",
+			"	'use strict';",
 			"	$1",
 			"}());"
 		],
@@ -63,6 +74,7 @@
 		"prefix": "docready",
 		"body": [
 			"$(document).ready(function () {",
+			"	'use strict';",
 			"	$1",
 			"});"
 		],
